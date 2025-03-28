@@ -1,5 +1,6 @@
 module "linode_storage_bucket" {
-  source      = "../.." # Update with your actual module path
+  source      = "jimright/modules/example//modules/terraform-linode-bucket" # Update with your actual module path
+
   bucket_name = "my-linode-bucket"
   cluster     = "us-east-1"
   access_key  = "your-linode-access-key"

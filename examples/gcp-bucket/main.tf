@@ -1,5 +1,6 @@
 module "gcs_bucket" {
-  source             = "../../" # Update with your actual module path
+  source             = "jimright/modules/example//modules/terraform-gcp-bucket" # Update with your actual module path
+  
   bucket_name        = "my-gcs-bucket"
   project_id         = "my-gcp-project"
   location           = "us-central1"

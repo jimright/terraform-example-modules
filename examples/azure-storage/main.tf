@@ -1,5 +1,6 @@
 module "storage_account" {
-  source                   = "../../" # Update with your actual module path
+  source                   = "jimright/modules/example//modules/terraform-azure-storage" # Update with your actual module path
+  
   storage_account_name     = "myterraformstorage"
   resource_group_name      = "my-resource-group"
   location                 = "West Europe"
